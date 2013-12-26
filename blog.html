@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8">
+	<title>Blog</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:regular,bold' rel='stylesheet' type='text/css'>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script><!-- Various Custom JavaScript including Lightbox Settings --> 
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script><!-- Lightbox JavaScript --> 
+	<script type="text/javascript" src="js/jquery.orbit-1.2.3.min.js"></script><!-- Powers Simple slider and Page Title Background -->
+	<script type="text/javascript" src="js/superfish.js"></script><!-- Drop-Down Menu JavaScript --> 
+	
+	<!-- Simple slider IE Styles --> 
+	<!--[if IE]>
+	     <style type="text/css">
+	         .timer { display: none !important; }
+	         div.caption { background:transparent; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);zoom: 1; }
+	    </style>
+	<![endif]-->
+	<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="css/ie7.css" />
+	<![endif]-->
+	
+</head>
+<body>
+<div id="header-nav-position">
+	<div id="header-nav-container">
+		<div id="header-nav-bg">
+			<div id="header-nav">
+
+				<div id="logo">
+					<h1><a href="index.html">The Powder House Gang</a></h1>
+				</div><!-- close #logo -->
+
+				<div id="navigation">
+					<ul class="sf-menu">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="about.html">About</a>
+						</li>
+						<!--<li>
+							<a href="portfolio.html">Media</a>
+							<ul>
+								<li>
+									<a href="photos.html">Photos</a>
+								</li>
+								<li>
+									<a href="videos.html">Videos</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="gigs.html">Gigs</a>
+						</li>
+						<li>
+							<a href="blog.html">Blog</a>
+						</li>-->
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
+
+						<li id="facebook-media">
+							<a href="http://facebook.com/powderhousegang" class="tool-tip" target="_blank" title="Facebook">Facebook Icon</a>
+						</li>
+						<li id="twitter-media">
+							<a href="http://twitter.com/powderhousegang" class="tool-tip" target="_blank" title="Twitter">Twitter Icon</a>
+						</li>
+						<li id="e-mail-media">
+							<a href="mailto:booking@powderhousegang.com" class="tool-tip" target="_blank" title="E-mail">E-mail Icon</a>	
+						</li>
+					</ul>
+				</div><!-- close #navigation -->
+
+
+			<div id="header-nav-base"></div>
+			</div><!-- close #header-nav -->
+		</div><!-- close #h#header-nav-bg -->
+	</div><!-- close #header-nav-container -->
+</div><!-- close #header-nav-position -->
+
+<div id="header-container">
+	
+
+<!-- Background Slides -->
+<div id="featured-slider-outside">
+<div id="featured-slider-container">
+<div id="featured-slider-subcontainer">
+
+		<div id="featured-page-title"> 
+			<img src="images/sample-images/page-title7.jpg" alt="background image" />
+		</div><!-- close #featured -->
+		
+</div><!-- close #featured-slider-subcontainer -->
+</div><!-- close #featured-slider-container -->
+</div><!-- close #featured-slider-outside -->
+	<script type="text/javascript">
+	     $(window).load(function() {
+	         $('#featured-page-title').orbit({
+			     animation: 'fade',                  // fade, horizontal-slide, vertical-slide, horizontal-push
+			     animationSpeed: 1200,                // how fast animtions are
+			     timer: true, 			 // true or false to have the timer
+			     advanceSpeed: 4000, 		 // if timer is enabled, time between transitions 
+			     pauseOnHover: false, 		 // if you hover pauses the slider
+			     startClockOnMouseOut: false, 	 // if clock should start on MouseOut
+			     startClockOnMouseOutAfter: 1000, 	 // how long after MouseOut should the timer start again
+			     directionalNav: false, 		 // manual advancing directional navs
+			     captions: false, 			 // do you want captions?
+			     captionAnimation: 'fade', 		 // fade, slideOpen, none
+			     captionAnimationSpeed: 800, 	 // if so how quickly should they animate in
+			     bullets: false,			 // true or false to activate the bullet navigation
+			     bulletThumbs: false,		 // thumbnails for the bullets
+			     bulletThumbLocation: '',		 // location from this file where thumbs will be
+			     afterSlideChange: function(){} 	 // empty function 
+			});
+	     });
+	</script>
+<!-- End Background Slides -->
+
+
+	<div id="page-title"><h2>Blog</h2></div>
+	
+</div><!-- close #header-container -->
+
+<div id="main-container-bg">
+<div id="main-container">
+	
+	<div class="sidebar">
+		<h4>Information</h4>
+		<ul class="submenu">
+			<li><a href="mailto:booking@powderhousegang.com">Booking</a></li>
+			<li><a href="#">Testimonials</a></li>
+			<li><a href="mailto:booking@powderhousegang.com">Contact Us</a></li>
+		</ul>
+				
+		<div class="sidebardivider"></div>
+		
+		<h4>Latest Tweets</h4>
+		<script type="text/javascript">
+		$(document).ready(function() {
+				$('#tweets-sidebar').jtwt({image_size : 20, count : 3, username: 'envato', convert_links : 1, loader_text : 'Loading new tweets...'});   
+		});                      
+		</script>
+		<div id="tweets-sidebar"></div>
+		
+		<div class="sidebardivider"></div>
+		
+		<div id="sidebar-base"></div>
+	</div><!-- close .sidebar -->
+
+	<div id="main-content-sidebar">
+	
+		<div class="bread-crumbs">You are here: <a href="index.html">Home</a> &rsaquo; Blog</div>
+		
+		
+		
+		<!-- BEGIN BLOG POST -->
+		<div class="blog-post">
+		<div class="post-heading">
+			<div class="post-data">
+				<h2 class="blogpost"><a href="blog-single.html">Sample blog post title here</a></h2>
+				Posted by <a href="#">Admin</a> in <a href="#">Uncategorized</a> | June 24, 2011
+			</div>
+			<div class="comments"><a href="#">5</a></div>
+		</div><!-- close .post-heading -->
+		<div class="aligncenter"><a href="blog-single.html"><img src="images/sample-images/blog1.jpg" alt="" width="638" height="200" class="transparent" /></a></div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus nisi vitae nibh sollicitudin a sagittis urna viverra. Donec malesuada tempus enim eleifend egestas. Donec mattis mollis mauris, ut congue ante euismod quis. Phasellus nec rutrum arcu. Pellentesque condimentum dapibus quam, dapibus accumsan nulla sollicitudin vitae.</p>
+		<a href="blog-single.html" class="button">Read more &rsaquo;</a>
+		<div class="divider-large"></div>
+		</div>
+		<!-- END BLOG POST -->
+		
+		
+		
+		
+		<!-- BEGIN BLOG POST -->
+		<div class="blog-post">
+		<div class="post-heading">
+			<div class="post-data">
+				<h2 class="blogpost"><a href="blog-single.html">Sample blog post title here</a></h2>
+				Posted by <a href="#">Admin</a> in <a href="#">Uncategorized</a> | June 24, 2011
+			</div>
+			<div class="comments"><a href="#">5</a></div>
+		</div><!-- close .post-heading -->
+		<div class="aligncenter"><a href="blog-single.html"><img src="images/sample-images/blog2.jpg" alt="" width="638" height="200" class="transparent" /></a></div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus nisi vitae nibh sollicitudin a sagittis urna viverra. Donec malesuada tempus enim eleifend egestas. Donec mattis mollis mauris, ut congue ante euismod quis. Phasellus nec rutrum arcu. Pellentesque condimentum dapibus quam, dapibus accumsan nulla sollicitudin vitae.</p>
+		<a href="blog-single.html" class="button">Read more &rsaquo;</a>
+		<div class="divider-large"></div>
+		</div>
+		<!-- END BLOG POST -->
+		
+		
+		
+		
+		<!-- BEGIN BLOG POST -->
+		<div class="blog-post">
+		<div class="post-heading">
+			<div class="post-data">
+				<h2 class="blogpost"><a href="blog-single.html">Sample blog post title here</a></h2>
+				Posted by <a href="#">Admin</a> in <a href="#">Uncategorized</a> | June 24, 2011
+			</div>
+			<div class="comments"><a href="#">5</a></div>
+		</div><!-- close .post-heading -->
+		<div class="aligncenter"><a href="blog-single.html"><img src="images/sample-images/blog3.jpg" alt="" width="638" height="200" class="transparent" /></a></div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus nisi vitae nibh sollicitudin a sagittis urna viverra. Donec malesuada tempus enim eleifend egestas. Donec mattis mollis mauris, ut congue ante euismod quis. Phasellus nec rutrum arcu. Pellentesque condimentum dapibus quam, dapibus accumsan nulla sollicitudin vitae.</p>
+		<a href="blog-single.html" class="button">Read more &rsaquo;</a>
+		<div class="divider-large"></div>
+		</div>
+		<!-- END BLOG POST -->
+		
+		
+		
+		
+		<!-- BEGIN BLOG POST -->
+		<div class="blog-post">
+		<div class="post-heading">
+			<div class="post-data">
+				<h2 class="blogpost"><a href="blog-single.html">Sample blog post title here</a></h2>
+				Posted by <a href="#">Admin</a> in <a href="#">Uncategorized</a> | June 24, 2011
+			</div>
+			<div class="comments"><a href="#">5</a></div>
+		</div><!-- close .post-heading -->
+		<div class="aligncenter"><a href="blog-single.html"><img src="images/sample-images/blog4.jpg" alt="" width="638" height="200" class="transparent" /></a></div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus nisi vitae nibh sollicitudin a sagittis urna viverra. Donec malesuada tempus enim eleifend egestas. Donec mattis mollis mauris, ut congue ante euismod quis. Phasellus nec rutrum arcu. Pellentesque condimentum dapibus quam, dapibus accumsan nulla sollicitudin vitae.</p>
+		<a href="blog-single.html" class="button">Read more &rsaquo;</a>
+		<div class="divider-large"></div>
+		</div>
+		<!-- END BLOG POST -->
+		
+		
+		<!-- BEGIN PAGINATION -->
+		<div class="pagination">
+			<a href="#" class="selected">1</a>
+			<a href="#">2</a>
+			<a href="#">&rsaquo;</a>
+		</div>
+		<!-- END PAGINATION -->
+	
+	
+	
+	
+	</div><!-- close #main-content-sidebar -->
+	
+
+	
+	
+	
+	
+<div id="main-container-base"></div><!-- close #main-container-base -->	
+</div><!-- close #main-container -->
+</div><!-- close #main-container-bg -->
+
+<div id="footer-container">
+	<div id="footer">
+		<div class="container">
+			<div class="grid3column">
+				<h4>About us</h4>
+				<p>
+					The Powder House Gang is an a cappella &amp; barbershop singing group delighting
+					audiences since 2010.  Let us sing for you!
+				</p>
+			</div>
+			
+			<div class="grid3column">
+				<h4>Stay in touch</h4>
+				<a href="mailto:booking@powderhousegang.com" class="social-email tool-tip" title="E-mail">E-mail</a>
+				<a href="http://facebook.com/powderhousegang" class="social-facebook tool-tip" title="Facebook">Facebook</a>
+				<a href="http://twitter.com/powderhousegang" class="social-twitter tool-tip" title="Twitter">Twitter</a>
+			</div>
+			
+			<div class="grid3column lastcolumn">
+				<h4>Contact us</h4>
+				<ul class="contact-info">
+					<li class="phone">(978) 448-3121</li>
+					<li class="e-mail"><a href="mailto:booking@powderhousegang.com">booking [at] powderhousegang.com</a></li>
+				</ul>
+			</div>
+		</div>
+	</div><!-- close #footer -->
+
+	<div id="footer-base-container">
+		<div id="footer-base">Copyright © 2010-2013 Powder House Gang. Developed by <a href="http://digitalbrook.com" target="_blank">Digital Brook Technologies</a>.</div>
+	</div><!-- close #footer-base-container -->
+</div><!-- close #footer-container -->
+
+</body>
+</html>
