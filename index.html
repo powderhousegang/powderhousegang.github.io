@@ -126,20 +126,8 @@
 
 <script type="text/javascript" src="js/jquery.exposure.min.js"></script><!-- Gallery Slider JavaScript --> 
 
-<script type="text/javascript">
-//View/Hide Thumbnail JavaScript
-$(document).ready(function() { 
-    $(".panel").hide();
-    $("#featured-main-slider").hover( 
-        function(){ 
-			$(".panel").stop(true, true).slideDown('medium'); 
-		},
-        function(){ 
-			$(".panel").slideUp('medium'); 
-		}
-    );
-});
-</script>
+<script type="text/javascript" src="js/thumbnails.js"></script>
+
 <!-- End FEATURED SLIDER -->
 
 	
@@ -181,14 +169,8 @@ $(document).ready(function() {
 	<!-- BEGIN jCarousel -->
 	<div id="carousel">
 		<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script> 
-		<script type="text/javascript">
-		jQuery(document).ready(function() {
-		    jQuery('#mycarousel').jcarousel({
-		        scroll: 2, // The number of items to scroll by. 
-				animation: "slow" //("slow" or "fast")
-		    });
-		});
-		</script>
+		<script type="text/javascript" src="js/mycarousel.js"></script>
+
 		<ul id="mycarousel" class="jcarousel-skin-tango">
 			<li><a href="images/portfolio/profile.jpg" class="fancylightbox"><img src="images/portfolio/profile.jpg" width="132" height="102" alt="carousel-image" class="transparent" /></a></li>
 		    <li><a href="images/portfolio/benefit_concert.jpg" class="fancylightbox"><img src="images/portfolio/benefit_concert.jpg" width="132" height="102" alt="carousel-image" class="transparent" /></a></li>
@@ -248,5 +230,6 @@ $(document).ready(function() {
 	</div><!-- close #footer-base-container -->
 </div><!-- close #footer-container -->
 
+<script type="text/javascript" src="js/background.js"></script>
 </body>
 </html>

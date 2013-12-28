@@ -1,7 +1,7 @@
 //Flickr Widget in Footer			
 $(document).ready(function(){		 			   
 	// Our very special jQuery JSON fucntion call to Flickr, gets details of the most recent images			   
-	$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=52617155@N08&lang=en-us&format=json&jsoncallback=?", displayImages);  //YOUR IDGETTR GOES HERE
+	//$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=52617155@N08&lang=en-us&format=json&jsoncallback=?", displayImages);  //YOUR IDGETTR GOES HERE
 	function displayImages(data) {																																   
 		// Randomly choose where to start. A random number between 0 and the number of photos we grabbed (20) minus  7 (we are displaying 7 photos).
 		var iStart = Math.floor(Math.random()*(0));	
@@ -44,7 +44,7 @@ $(document).ready(function(){
 //Flickr Widget in Sidebar			
 $(document).ready(function(){		 			   
 	// Our very special jQuery JSON fucntion call to Flickr, gets details of the most recent images			   
-	$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=52617155@N08&lang=en-us&format=json&jsoncallback=?", displayImages);  //YOUR IDGETTR GOES HERE
+	//$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=52617155@N08&lang=en-us&format=json&jsoncallback=?", displayImages);  //YOUR IDGETTR GOES HERE
 	function displayImages(data) {																																   
 		// Randomly choose where to start. A random number between 0 and the number of photos we grabbed (20) minus  7 (we are displaying 7 photos).
 		var iStart = Math.floor(Math.random()*(0));	
